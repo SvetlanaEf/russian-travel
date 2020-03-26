@@ -1,0 +1,17 @@
+@import url(./_item/video__container_item.css);
+
+.video__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 18px;
+    max-width: 1184px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .video__container {
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+    }
+}

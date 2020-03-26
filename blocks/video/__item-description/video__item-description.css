@@ -1,0 +1,7 @@
+.video__item-description {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    z-index: 1;
+}

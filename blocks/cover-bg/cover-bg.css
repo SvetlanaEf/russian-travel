@@ -1,0 +1,24 @@
+.cover-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/poezda.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cover-bg:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2A2C2F;
+    opacity: 0.3;
+}
+

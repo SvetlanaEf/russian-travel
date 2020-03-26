@@ -1,0 +1,13 @@
+@import url(./__container/comments__container.css);
+
+.comments {
+    width: 100%;
+    max-width: 1184px;
+    margin-bottom: 102px;
+}
+
+@media screen and (max-width: 700px) {
+    .comments {
+        margin-bottom: 48px;
+    }
+}

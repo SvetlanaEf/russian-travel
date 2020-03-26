@@ -1,0 +1,9 @@
+.lead__image-card {
+    position: absolute;
+    width: 96%;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}

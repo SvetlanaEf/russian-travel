@@ -1,0 +1,36 @@
+@import url(./__title/cover__title.css);
+@import url(./__subtitle/cover__subtitle.css);
+
+.cover {
+    position: relative;
+    max-width: 1184px;
+    height: 594px;
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.cover:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 1024px) {
+    .cover {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cover {
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cover {
+        max-height: 272px;
+    }
+
+}

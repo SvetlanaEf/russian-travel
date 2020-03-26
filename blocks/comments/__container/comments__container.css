@@ -1,0 +1,12 @@
+.comments__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 19px;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .comments__container {
+        grid-template-columns: 1fr;
+    }
+}
