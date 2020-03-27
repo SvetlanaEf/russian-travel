@@ -11,10 +11,6 @@
     margin-bottom: 102px;
 }
 
-.video:hover .video__item {
-    opacity: .6;
-}
-
 @media screen and (max-width: 375px) {
     .video {
         margin-bottom: 64px;
