@@ -1,12 +1,10 @@
-.lead__image {  
+.lead__image {
     position: relative;
-    width: 100%;
     margin: 0;
 }
 
 @media screen and (max-width: 768px) {
     .lead__image {
-        width: 100vw;
         margin: 0 -24px;
     }
 }

@@ -1,8 +1,11 @@
+@import url(./_kamchatka/video__item_kamchatka.css);
+@import url(./_observatory/video__item_observatory.css);
+
 .video__item {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
     height: 323px;
@@ -12,7 +15,19 @@
     background-size: cover;
     box-sizing: border-box;
     overflow: hidden;
+    color: #fff;
     background-position: center;
+}
+
+.video__item:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 41px;
+    height: 41px;
+    background-image: url(../../../images/__icon_play.svg);
+    z-index: 1;
 }
 
 .video__item:after {
@@ -23,18 +38,11 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.5);
+    transition: background-color.2s ease;
 }
 
-.video__item:first-child {
-    background-image: url(../../../images/colors_of_kamch.jpg);
-}
-
-.video__item:last-child {
-    background-image: url(../../../images/observ.jpg);
-}
-
-.video__item:hover {
-    opacity: .6;
+.video__item:hover:after {
+    background-color: rgba(0,0,0,.8);
 }
 
 @media screen and (max-width: 1024px) {
@@ -46,6 +54,11 @@
 @media screen and (max-width: 768px) {
     .video__item {
         height: 200px;
-        padding: 25px;
+        padding: 24px;
+    }
+
+    .video__item:before {
+        top: 24px;
+        left: 24px;
     }
 }

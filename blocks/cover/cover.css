@@ -3,34 +3,65 @@
 
 .cover {
     position: relative;
-    max-width: 1184px;
-    height: 594px;
+    margin-bottom: 102px;
+    background-image: url(../../images/poezda.jpg);
+    background-size: cover;
+    background-position: center;
     text-decoration: none;
     display: grid;
+    height: 594px;
     grid-template-rows: repeat(3, 1fr);
     padding: 0 60px;
     box-sizing: border-box;
 }
 
-.cover:hover {
-    opacity: .6;
+.cover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 44, 47, 0.3);
+    transition: background-color .2s ease;
+}
+
+.cover:hover:after {
+    background-color: rgba(42, 44, 47, 0.8);
 }
 
 @media screen and (max-width: 1024px) {
     .cover {
-        width: 100vw;
+        margin: 0 -48px 102px;
+        height: 562px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover {
+        margin: 0 -24px 102px;
+        height: 500px;
     }
 }
 
 @media screen and (max-width: 700px) {
     .cover {
+        height: 315px;
         margin-bottom: 64px;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cover {
+        width: 100vw;
+        margin: 0 -16px 64px;
+        max-height: 272px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .cover {
-        max-height: 272px;
+        height: 216px;
     }
-
 }
