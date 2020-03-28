@@ -4,6 +4,8 @@
 .cover {
     position: relative;
     margin-bottom: 102px;
+    max-width: 1184px;
+    width: 100%;
     background-image: url(../../images/poezda.jpg);
     background-size: cover;
     background-position: center;
@@ -34,6 +36,7 @@
     .cover {
         margin: 0 -48px 102px;
         height: 562px;
+        width: unset;
     }
 }
 
@@ -54,14 +57,13 @@
 
 @media screen and (max-width: 500px) {
     .cover {
-        width: 100vw;
-        margin: 0 -16px 64px;
         max-height: 272px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .cover {
+        margin: 0 -16px 64px;
         height: 216px;
     }
 }
